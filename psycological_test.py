@@ -2,8 +2,8 @@ import telebot
 from telebot import types
 from decouple import config
 
-
-bot = telebot.TeleBot(config('TOKEN'))
+token = config('TOKEN')
+bot = telebot.TeleBot(token=token)
 name = ""
 step = 1
 answers = {}
